@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7e64dd6-e661-498b-9c6b-0a03df265aa2" name="Changes" comment="payments related code">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CSLA-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CSLA-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/cronjobs/SavingAccountInterest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/cronjobs/SavingAccountInterest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/entity/Accounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/entity/Accounts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/entity/CompanyProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/entity/CompanyProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/entity/LoanApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/entity/LoanApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/entity/UploadDocs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/entity/UploadDocs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/exceptionHandler/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/exceptionHandler/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/model/request/UsersRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/model/request/UsersRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/model/response/UsersResponse$UsersResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/model/response/UsersResponse$UsersResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/model/response/UsersResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/model/response/UsersResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtRequest$JwtRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtRequest$JwtRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtResponse$JwtResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtResponse$JwtResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/JWT/JwtResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/UserAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/UserAuthenticationEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/service/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/service/UserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/service/UserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/security/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/security/service/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/service/CompanyProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/service/CompanyProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/service/impl/DocsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/service/impl/DocsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/AverageList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/AverageList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/ConvertListToUppercase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/ConvertListToUppercase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/EmployeeFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/EmployeeFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/EvenOddNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/EvenOddNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/FindDuplicateElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/FindDuplicateElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/FindHighestPaidEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/FindHighestPaidEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/FindSecondHighestNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/FindSecondHighestNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/FindTheMostFrequentElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/FindTheMostFrequentElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/FirstLetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/FirstLetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/FrequencyDuplicateCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/FrequencyDuplicateCharacters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/GroupByLength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/GroupByLength.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/LengthGreaterGivenNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/LengthGreaterGivenNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/ReversString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/ReversString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/SecondHeightNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/SecondHeightNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/ShortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/ShortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/SortEmployeesBySalaryDescendingOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/SortEmployeesBySalaryDescendingOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/StartWithSpecificCharector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/StartWithSpecificCharector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/util/SumAllElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/util/SumAllElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2025-02-06T17-49-30_225.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.CSLA.AuthServicesApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.CSLA.AuthServicesApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/CSLA/AuthServicesApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shashipratapsingh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shashipratapsingh/integration-financial-Application.git&quot;,
+    &quot;accountId&quot;: &quot;0cb0aa5f-6ad6-40f9-93e0-487418ecc9a9&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2rFAs0ky2oeyL4P0p1jRf9ibwIg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AuthServicesApplication.executor": "Run",
+    "Application.DuplicateCharacters.executor": "Run",
+    "Application.FrequencyDuplicateCharacters.executor": "Run",
+    "Application.SBICardApplication.executor": "Run",
+    "Maven.AuthServices [clean,install].executor": "Run",
+    "Maven.AuthServices [clean].executor": "Run",
+    "Maven.AuthServices [deploy].executor": "Run",
+    "Maven.AuthServices [install].executor": "Run",
+    "Maven.CSLA [clean].executor": "Run",
+    "Maven.CSLA [install].executor": "Run",
+    "Maven.IFA [clean].executor": "Run",
+    "Maven.IFA [install].executor": "Run",
+    "Maven.IFA [package].executor": "Run",
+    "Maven.SBI CARD [clean].executor": "Run",
+    "Maven.SBI CARD [install].executor": "Run",
+    "Maven.SBI CARD [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "openNewAccount",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Data_Navigation/login/SBI CARD/pom.xml",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\BeProjects\om prakash\Integrated Financial Application\src\main\java\com\IFA" />
+      <recent name="D:\BeProjects\om prakash\Integrated Financial Application" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SBICardApplication">
+    <configuration name="DuplicateCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.IFA.util.DuplicateCharacters" />
+      <module name="SBIC CARD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.IFA.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FrequencyDuplicateCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.IFA.util.FrequencyDuplicateCharacters" />
+      <module name="SBIC CARD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.IFA.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SBICDApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.IFA.SBICDApplication" />
+      <module name="SBIC CARD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.IFA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SBICardApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.IFA.SBICardApplication" />
+      <module name="SBI CARD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.IFA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SBIC CARD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SBIC CARD" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SBICardApplication" />
+        <item itemvalue="Application.SBICDApplication" />
+        <item itemvalue="Application.FrequencyDuplicateCharacters" />
+        <item itemvalue="Application.DuplicateCharacters" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7e64dd6-e661-498b-9c6b-0a03df265aa2" name="Changes" comment="" />
+      <created>1736144652030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736144652030</updated>
+    </task>
+    <task id="LOCAL-00001" summary="minnor fix">
+      <option name="closed" value="true" />
+      <created>1738156666008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738156666008</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="minnor fix" />
+    <MESSAGE value="payments related code" />
+    <option name="LAST_COMMIT_MESSAGE" value="payments related code" />
+  </component>
+</project>

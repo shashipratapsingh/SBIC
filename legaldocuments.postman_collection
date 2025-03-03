@@ -1,0 +1,555 @@
+{
+	"info": {
+		"_postman_id": "b60fc353-dfe7-4c5c-8dab-201141b3abec",
+		"name": "Integration-financial-Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30398232"
+	},
+	"item": [
+		{
+			"name": "Admin Dashboard",
+			"item": [
+				{
+					"name": "Upload Docs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJBZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3Mzg4NDc0NTEsImV4cCI6MTczODg1MTA1MX0.cXWzdYT2a5L6Ullz5u0SE8NyhgA2UTdxG-KOjJCeols",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uploadDocs",
+									"value": "{  \"documentsName\":\"documentsName\",    \"descriptions\":\"descriptions\",\n\"status\":\"rejected\"}",
+									"contentType": "application/json",
+									"type": "text"
+								},
+								{
+									"key": "docsFileFile",
+									"contentType": "application/json",
+									"type": "file",
+									"src": "WhatsApp.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8084/admin/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"admin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doc By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiTWFuYWdlciIsInN1YiI6Ik1hbmFnZXJAZ21haWwuY29tIiwiaWF0IjoxNzM4ODQwOTAxLCJleHAiOjE3Mzg4NDQ1MDF9.oBBPNxSoSixbdf0RFAZhGsdjgCFptfG1ATVGOWZHMrk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/admin/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"admin",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Status",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJBZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3Mzg4NDk0NDEsImV4cCI6MTczODg1MzA0MX0.M1bYqjhhJeBvkMYWC9nOan_jbLYlIQHYyhiuOOvrR78",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/admin/rejected",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"admin",
+								"rejected"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Helthcheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/admin/dashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"admin",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Docs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiTWFuYWdlciIsInN1YiI6Ik1hbmFnZXJAZ21haWwuY29tIiwiaWF0IjoxNzM4ODQwOTAxLCJleHAiOjE3Mzg4NDQ1MDF9.oBBPNxSoSixbdf0RFAZhGsdjgCFptfG1ATVGOWZHMrk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/admin/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"admin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate PDF",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiTWFuYWdlciIsInN1YiI6Ik1hbmFnZXJAZ21haWwuY29tIiwiaWF0IjoxNzM4ODQ1Mzk1LCJleHAiOjE3Mzg4NDg5OTV9.ExHM1GKstk5Y03dKB4DUrqaE07CLO3zgB70ICHyDNpQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/admin/generate-pdf/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"admin",
+								"generate-pdf",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8084/status/rejected",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJBZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3Mzg5MTM5OTAsImV4cCI6MTczODkxNzU5MH0.rOvhjGan5Dgg-1oauzNNSK_EGIHMYXU-1r0-OQ41B9o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJBZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3Mzg4NDk0NDEsImV4cCI6MTczODg1MzA0MX0.M1bYqjhhJeBvkMYWC9nOan_jbLYlIQHYyhiuOOvrR78",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8084/admin/status/pending",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"admin",
+								"status",
+								"pending"
+							]
+						},
+						"description": "Generated from cURL: curl --location 'http://localhost:8084/status/rejected' \\\r\n--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJBZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3Mzg4NDk0NDEsImV4cCI6MTczODg1MzA0MX0.M1bYqjhhJeBvkMYWC9nOan_jbLYlIQHYyhiuOOvrR78' \\\r\n--data ''\r\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Loan",
+			"item": [
+				{
+					"name": "Apply for Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVXNlciIsInN1YiI6InVzZXJAZ21haWwuY29tIiwiaWF0IjoxNzM5MTcyMDkwLCJleHAiOjE3MzkxNzU2OTB9.9AD-zeQ17L6OCcNqqyxC1LN0-ZeQbsfF4WZEBJsTkek",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Ravi singh\",\r\n    \"dateOfBirth\": \"1999-08-07\",\r\n    \"address\": \"Noida 15\",\r\n    \"contactNumber\": \"8577951142\",\r\n    \"email\": \"ravi@gmail.com.com\",\r\n    \"loanAmount\": 2000000,\r\n    \"loanType\": \"Personal\",\r\n    \"loanTenure\": 24,\r\n    \"interestRate\": 5.5,\r\n    \"purposeOfLoan\": \"Home Renovation\",\r\n    \"employmentType\": \"Salaried\",\r\n    \"annualIncome\": 50000,\r\n    \"companyName\": \"ABC Corp\",\r\n    \"workExperience\": 5,\r\n    \"aadhaarNumber\": \"857785114212\",\r\n    \"panNumber\": \"WERDT0907E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/loans/apply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"loans",
+								"apply"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8080/api/loans/apply\" \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\r\n    \"fullName\": \"John Doe\",\r\n    \"dateOfBirth\": \"1985-01-01\",\r\n    \"address\": \"1234 Elm St\",\r\n    \"contactNumber\": \"1234567890\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"loanAmount\": 100000,\r\n    \"loanType\": \"Personal\",\r\n    \"loanTenure\": 24,\r\n    \"interestRate\": 5.5,\r\n    \"purposeOfLoan\": \"Home Renovation\",\r\n    \"employmentType\": \"Salaried\",\r\n    \"annualIncome\": 50000,\r\n    \"companyName\": \"ABC Corp\",\r\n    \"workExperience\": 5\r\n}'\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "KYC Verification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVXNlciIsInN1YiI6InVzZXJAZ21haWwuY29tIiwiaWF0IjoxNzM5MTcxNDY1LCJleHAiOjE3MzkxNzUwNjV9.3hn5-J5HTKofShw0Oms1RSRiHsMvfvYyCimjEK-UYB0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/loans/kyc/verify/1?aadhaarNumber=857785114212&panNumber=WERDT0907E&kycStatus=Approved&managerId=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"loans",
+								"kyc",
+								"verify",
+								"1"
+							],
+							"query": [
+								{
+									"key": "aadhaarNumber",
+									"value": "857785114212"
+								},
+								{
+									"key": "panNumber",
+									"value": "WERDT0907E"
+								},
+								{
+									"key": "kycStatus",
+									"value": "Approved"
+								},
+								{
+									"key": "managerId",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8084/api/loans/kyc/verify/4?aadhaarNumber=857785114212&panNumber=WERDT0907E&kycStatus=Approved&managerId=2\"\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "approved Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVXNlciIsInN1YiI6InVzZXJAZ21haWwuY29tIiwiaWF0IjoxNzM5MTcxNDY1LCJleHAiOjE3MzkxNzUwNjV9.3hn5-J5HTKofShw0Oms1RSRiHsMvfvYyCimjEK-UYB0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/loans/approve/1?managerId=2&comments=Loan%20Approved%20Successfully",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"loans",
+								"approve",
+								"1"
+							],
+							"query": [
+								{
+									"key": "managerId",
+									"value": "2"
+								},
+								{
+									"key": "comments",
+									"value": "Loan%20Approved%20Successfully"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X PUT \"http://localhost:8084/api/loans/approve/4?adminId=1&comments=Loan%20Approved%20Successfully\"\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "All Loan List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MzkxNjkyODgsImV4cCI6MTczOTE3Mjg4OH0.VZKZfEk3qzBxKxUqanMy7SifbtNVsVgGcHre1LrhBiU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/loans/all/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"loans",
+								"all",
+								""
+							]
+						},
+						"description": "Generated from cURL: curl -X PUT \"http://localhost:8084/api/loans/approve/4?adminId=1&comments=Loan%20Approved%20Successfully\"\r\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manager DashBoard",
+			"item": [
+				{
+					"name": "Add Manager",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fullName\": \"Alice Johnson\",\r\n  \"email\": \"alice.johnson@bank.com\",\r\n  \"contactNumber\": \"9876543210\",\r\n  \"designation\": \"Manager\",\r\n  \"department\": \"Loans\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/managers/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"managers",
+								"register"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST http://localhost:8084/api/managers/register \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\r\n  \"fullName\": \"Alice Johnson\",\r\n  \"email\": \"alice.johnson@bank.com\",\r\n  \"contactNumber\": \"9876543210\",\r\n  \"designation\": \"Senior Bank Manager\",\r\n  \"department\": \"Loans\"\r\n}'\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Manager Get BY Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/managers/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"managers",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"manager\",\r\n    \"email\":\"manager@gmail.com\",\r\n\r\n    \"password\":\"1234\",\r\n    \"roles\":\"Manager\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/auth/sign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"auth",
+						"sign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"manager@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
