@@ -2,7 +2,11 @@ package com.IFA.controller;
 
 import com.IFA.dto.CustomerRequestDTO;
 import com.IFA.dto.CustomerResponseDTO;
+import com.IFA.dto.StudentRequestDTO;
+import com.IFA.dto.StudentResponseDTO;
+import com.IFA.entity.Student;
 import com.IFA.service.CustomerService;
+import com.IFA.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -42,5 +46,14 @@ public class CustomerController {
     public ResponseEntity<Void> deleteCustomer(@PathVariable Long id) {
         customerService.deleteCustomer(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @Autowired
+    private StudentService studentService;
+
+    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
+    @PostMapping("/addStudent")
+    public ResponseEntity<StudentResponseDTO> createCustomer(@RequestBody StudentRequestDTO studentRequest) {
+        return ResponseEntity.ok(studentService.save(studentRequest));
     }
 }
