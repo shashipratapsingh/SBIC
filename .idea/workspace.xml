@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7e64dd6-e661-498b-9c6b-0a03df265aa2" name="Changes" comment="payments related code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SBICARD/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/IFA/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/IFA/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/IFA/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/IFA/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SBICARD/controller/CustomerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,7 +101,7 @@
       <module name="SBIC CARD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.IFA.util.*" />
+          <option name="PATTERN" value="com.SBICARD.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
       </method>
     </configuration>
     <configuration name="FrequencyDuplicateCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.IFA.util.FrequencyDuplicateCharacters" />
+      <option name="MAIN_CLASS_NAME" value="com.SBICARD.util.FrequencyDuplicateCharacters" />
       <module name="SBIC CARD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.IFA.util.*" />
+          <option name="PATTERN" value="com.SBICARD.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,7 +129,7 @@
       <module name="SBIC CARD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.IFA.*" />
+          <option name="PATTERN" value="com.SBICARD.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +138,11 @@
       </method>
     </configuration>
     <configuration name="SBICardApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.IFA.SBICardApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.SBICARD.SBICardApplication" />
       <module name="SBI CARD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.IFA.*" />
+          <option name="PATTERN" value="com.SBICARD.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

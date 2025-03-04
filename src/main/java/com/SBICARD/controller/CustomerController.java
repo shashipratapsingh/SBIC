@@ -46,13 +46,4 @@ public class CustomerController {
         customerService.deleteCustomer(id);
         return ResponseEntity.noContent().build();
     }
-
-    @Autowired
-    private StudentService studentService;
-
-    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
-    @PostMapping("/addStudent")
-    public ResponseEntity<StudentResponseDTO> createCustomer(@RequestBody StudentRequestDTO studentRequest) {
-        return ResponseEntity.ok(studentService.save(studentRequest));
-    }
 }
