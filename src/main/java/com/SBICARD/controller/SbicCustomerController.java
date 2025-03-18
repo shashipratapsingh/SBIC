@@ -23,6 +23,20 @@ public class SbicCustomerController {
     }
 
     @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
+    @PostMapping("/kyc/{uniqueId}")
+    public ResponseEntity<String> kycCustomer(@PathVariable String uniqueId, @RequestParam int cibilScore,
+                                              @RequestParam String adharCardNo, @RequestParam String uniqueAccountIdentifier,
+                                              @RequestParam double income) {
+        return ResponseEntity.ok(sbicCustomerService.kycCustomer(uniqueId, cibilScore, adharCardNo, uniqueAccountIdentifier, income));
+    }
+
+    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
+    @PostMapping("/approve/{uniqueId}")
+    public ResponseEntity<String> approveCustomer(@PathVariable String uniqueId) {
+        return ResponseEntity.ok(sbicCustomerService.approveCustomer(uniqueId));
+    }
+
+    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
     @GetMapping("/{uniqueId}")
     public ResponseEntity<SbicCustomer> getCustomerProfile(@PathVariable String uniqueId) {
         return ResponseEntity.ok(sbicCustomerService.getCustomerProfile(uniqueId));
@@ -34,13 +48,7 @@ public class SbicCustomerController {
         return ResponseEntity.ok(sbicCustomerService.issueECard(uniqueId));
     }
 
-    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
-    @PostMapping("/approve/{uniqueId}")
-    public ResponseEntity<String> approveCustomer(@PathVariable String uniqueId) {
-        return ResponseEntity.ok(sbicCustomerService.approveCustomer(uniqueId));
-    }
-
-    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
+    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager','ROLE_User')")
     @GetMapping("/show-ecard/{uniqueId}")
     public ResponseEntity<String> showECard(@PathVariable String uniqueId) {
         return ResponseEntity.ok(sbicCustomerService.showECard(uniqueId));
