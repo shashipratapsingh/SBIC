@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e7e64dd6-e661-498b-9c6b-0a03df265aa2" name="Changes" comment="payments related code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/controller/SbicCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SBICARD/controller/SbicCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/dto/CustomerRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SBICARD/dto/CustomerRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/dto/CustomerResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SBICARD/dto/CustomerResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SBICARD/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/service/impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SBICARD/service/impl/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/SBICARD/service/StudentServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/SBICARD/service/StudentServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

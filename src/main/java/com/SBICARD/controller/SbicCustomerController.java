@@ -1,7 +1,6 @@
 package com.SBICARD.controller;
 
 import com.SBICARD.entity.SbicCustomer;
-import com.SBICARD.service.CustomerService;
 import com.SBICARD.service.SbicCustomerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
