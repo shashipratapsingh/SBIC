@@ -1,10 +1,5 @@
 package com.SBICARD.service.impl;
 
-import com.SBICARD.dto.StudentRequestDTO;
-import com.SBICARD.dto.StudentResponseDTO;
-import com.SBICARD.entity.Student;
-import com.SBICARD.repository.StudentRepository;
-import com.SBICARD.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

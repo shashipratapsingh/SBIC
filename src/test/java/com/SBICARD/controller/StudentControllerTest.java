@@ -1,8 +1,5 @@
 package com.SBICARD.controller;
 
-import com.SBICARD.dto.StudentRequestDTO;
-import com.SBICARD.dto.StudentResponseDTO;
-import com.SBICARD.service.StudentService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

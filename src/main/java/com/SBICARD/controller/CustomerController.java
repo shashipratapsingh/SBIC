@@ -2,10 +2,7 @@ package com.SBICARD.controller;
 
 import com.SBICARD.dto.CustomerRequestDTO;
 import com.SBICARD.dto.CustomerResponseDTO;
-import com.SBICARD.dto.StudentRequestDTO;
-import com.SBICARD.dto.StudentResponseDTO;
 import com.SBICARD.service.CustomerService;
-import com.SBICARD.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
