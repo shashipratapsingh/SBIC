@@ -1,5 +1,7 @@
 package com.SBICARD.service;
 
+import com.SBICARD.dto.SbicCustomerRequest;
+import com.SBICARD.dto.SbicCustomerResponse;
 import com.SBICARD.entity.SbicCustomer;
 import com.SBICARD.repository.SbicCustomerRepository;
 import org.springframework.stereotype.Service;
@@ -12,9 +14,11 @@ public class SbicCustomerService {
         this.sbicCustomerRepository = sbicCustomerRepository;
     }
 
-    public SbicCustomer createOrUpdateProfile(SbicCustomer sbicCustomer) {
-        sbicCustomer.setStatus("pending");
-        return sbicCustomerRepository.save(sbicCustomer);
+    public SbicCustomerResponse createOrUpdateProfile(SbicCustomerRequest sbicCustomerRequest) {
+        SbicCustomer sbicCustomer = sbicCustomerRequest.toEntity();
+        sbicCustomer.setStatus("pending"); // Setting default status
+        SbicCustomer savedCustomer = sbicCustomerRepository.save(sbicCustomer);
+        return SbicCustomerResponse.fromEntity(savedCustomer);
     }
 
     public String kycCustomer(String uniqueId, int cibilScore, String adharCardNo, String uniqueAccountIdentifier, double income) {

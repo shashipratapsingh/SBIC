@@ -1,5 +1,7 @@
 package com.SBICARD.controller;
 
+import com.SBICARD.dto.SbicCustomerRequest;
+import com.SBICARD.dto.SbicCustomerResponse;
 import com.SBICARD.entity.SbicCustomer;
 import com.SBICARD.service.SbicCustomerService;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +20,8 @@ public class SbicCustomerController {
 
     @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
     @PostMapping("/create")
-    public ResponseEntity<SbicCustomer> createCustomerProfile(@RequestBody SbicCustomer sbicCustomer) {
-        return ResponseEntity.ok(sbicCustomerService.createOrUpdateProfile(sbicCustomer));
+    public ResponseEntity<SbicCustomerResponse> createCustomerProfile(@RequestBody SbicCustomerRequest sbicCustomerRequest) {
+        return ResponseEntity.ok(sbicCustomerService.createOrUpdateProfile(sbicCustomerRequest));
     }
 
     @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager')")
