@@ -29,9 +29,9 @@ public class SbicCustomerResponse {
 
     // Convert Entity to DTO
     public static SbicCustomerResponse fromEntity(SbicCustomer sbicCustomer) {
-        SbicCustomerResponse response = new SbicCustomerResponse();
-        BeanUtils.copyProperties(sbicCustomer, response);
-        return response;
+        SbicCustomerResponse sbicCustomerResponse = new SbicCustomerResponse();
+        BeanUtils.copyProperties(sbicCustomer, sbicCustomerResponse);
+        return sbicCustomerResponse;
     }
 
 }
