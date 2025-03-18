@@ -7,6 +7,257 @@
 	},
 	"item": [
 		{
+			"name": "Acquiring customers through SPRINT",
+			"item": [
+				{
+					"name": "Create Customer Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiTWFuYWdlciIsInN1YiI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWF0IjoxNzQyMjg2ODQyLCJleHAiOjE3NDIyOTA0NDJ9.sLLxz9uoW9LIXp4YLwQOGUdH5xsNHOPyUelw3zPoqO4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n           \"uniqueId\": \"12345\",\r\n           \"uniqueCustomerIdentifier\": \"CUST123\",\r\n           \"uniqueAccountIdentifier\": \"ACC123\",\r\n           \"name\": \"John Doe\",\r\n           \"age\": 30,\r\n           \"adharCardNo\":\"1234567890\",\r\n           \"city\": \"New York\",\r\n           \"income\": 75000,\r\n           \"surrogate\": \"SomeValue\",\r\n           \"product\": \"CreditCard\",\r\n           \"premium\": true,\r\n           \"feeAmount\": 500.00,\r\n           \"cibilScore\": 750,\r\n           \"cibilSegmentation\": \"Good\",\r\n           \"multiCarding\": false\r\n         }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/sbic/customers/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"sbic",
+								"customers",
+								"create"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST http://localhost:8080/api/customers/create \\\r\n     -H \"Content-Type: application/json\" \\\r\n     -d '{\r\n           \"uniqueId\": \"12345\",\r\n           \"uniqueCustomerIdentifier\": \"CUST123\",\r\n           \"uniqueAccountIdentifier\": \"ACC123\",\r\n           \"name\": \"John Doe\",\r\n           \"age\": 30,\r\n           \"city\": \"New York\",\r\n           \"income\": 75000,\r\n           \"surrogate\": \"SomeValue\",\r\n           \"product\": \"CreditCard\",\r\n           \"premium\": true,\r\n           \"feeAmount\": 500.00,\r\n           \"cibilScore\": 750,\r\n           \"cibilSegmentation\": \"Good\",\r\n           \"multiCarding\": false\r\n         }'\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiTWFuYWdlciIsInN1YiI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWF0IjoxNzQyMjg2ODQyLCJleHAiOjE3NDIyOTA0NDJ9.sLLxz9uoW9LIXp4YLwQOGUdH5xsNHOPyUelw3zPoqO4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/sbic/customers/12345",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"sbic",
+								"customers",
+								"12345"
+							]
+						},
+						"description": "Generated from cURL: curl -X GET http://localhost:8080/api/customers/12345\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Issue E-Card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NDIyODM3NTUsImV4cCI6MTc0MjI4NzM1NX0.Z1ig1GAH9Gi7Igu19fdcKtc2n-zYeQ0FDRwF0jhwbIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/sbic/customers/issue-ecard/12345",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"sbic",
+								"customers",
+								"issue-ecard",
+								"12345"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST http://localhost:8080/api/customers/issue-ecard/12345\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Customer (Manager Only)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NDIyODM3NTUsImV4cCI6MTc0MjI4NzM1NX0.Z1ig1GAH9Gi7Igu19fdcKtc2n-zYeQ0FDRwF0jhwbIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/sbic/customers/approve/12345",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"sbic",
+								"customers",
+								"approve",
+								"12345"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST http://localhost:8080/api/customers/approve/12345\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Show E-Card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NDIyODM3NTUsImV4cCI6MTc0MjI4NzM1NX0.Z1ig1GAH9Gi7Igu19fdcKtc2n-zYeQ0FDRwF0jhwbIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/sbic/customers/show-ecard/12345",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"sbic",
+								"customers",
+								"show-ecard",
+								"12345"
+							]
+						},
+						"description": "Generated from cURL: curl -X GET http://localhost:8080/api/customers/show-ecard/12345\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Perform KYC Verification (Manager Only)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NDIyODM3NTUsImV4cCI6MTc0MjI4NzM1NX0.Z1ig1GAH9Gi7Igu19fdcKtc2n-zYeQ0FDRwF0jhwbIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer YOUR_ACCESS_TOKEN"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cibilScore",
+									"value": "750",
+									"type": "text"
+								},
+								{
+									"key": "adharCardNo",
+									"value": "123456789012",
+									"type": "text"
+								},
+								{
+									"key": "uniqueAccountIdentifier",
+									"value": "ACC123",
+									"type": "text"
+								},
+								{
+									"key": "income",
+									"value": "50000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/sbic/customers/kyc/12345",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"sbic",
+								"customers",
+								"kyc",
+								"12345"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://localhost:8080/api/sbic/customers/kyc/12345\" \\\r\n-H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\r\n-d \"cibilScore=750&adharCardNo=123456789012&uniqueAccountIdentifier=ACC123&income=50000\"\r\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Create User",
 			"request": {
 				"auth": {
@@ -45,7 +296,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"raw": "{\r\n    \"email\":\"manager@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
