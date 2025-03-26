@@ -12,6 +12,7 @@ public class SBICardApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SBICardApplication.class, args);
 		System.out.println("Started Successfully");
+		System.out.println("Hey shashi testing this");
 	}
 
 }
